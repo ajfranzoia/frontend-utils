@@ -1,0 +1,21 @@
+/** 
+ * Grayscale filter
+ */
+.grayscale(@value: 1) {
+  -webkit-filter: grayscale(@value);
+  -moz-filter: grayscale(@value);
+  -o-filter: grayscale(@value);
+  -ms-filter: grayscale(@value);
+  filter: grayscale(@value);
+}
+
+/** 
+ * Text shadow with cross browser support
+ */
+.text-shadow(@value: 1px 1px black) {
+  -webkit-text-shadow: @value;
+     -moz-text-shadow: @value;
+      -ms-text-shadow: @value;
+       -o-text-shadow: @value;
+          text-shadow: @value;
+}

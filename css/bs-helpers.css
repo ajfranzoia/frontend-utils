@@ -1,0 +1,60 @@
+/**
+ * Well utilies
+ */
+.well.well-sm {
+  padding: 4px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.well .well-header {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+
+/**
+ * Alert utilies
+ */
+.alert-sm {
+  padding: 4px;
+}
+.alert-lg {
+  padding: 20px;
+}
+
+/**
+ * Grid utilies
+ */
+.center-col {
+  float: none;
+  margin: 0 auto;
+}
+
+/**
+ * Other components utilies
+ */
+.label.label-lg {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 1px 9px;
+  font-size: 14px;
+}
+.hr-sm {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/**
+ * Form utilities
+ */ 
+form.mark-required .required label:after {
+  color: #e32;
+  content: ' (required)';
+  display: inline;
+}
+form.mark-optional .required label:after {
+  color: #e32;
+  content: ' (optional)';
+  display: inline;
+}
