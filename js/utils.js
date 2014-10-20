@@ -17,7 +17,7 @@
    * @return {[type]}              [description]
    */
   $.fn.emptySelect = function(emptyMessage) {
-    $(this).empty();
+    $(this).empty()
     if (emptyMessage) {
       $(this).addOpt('', emptyMessage);
     }
@@ -119,7 +119,7 @@
     });
 
     $this.empty().append(opts);
-    $this.find('option[value=' + selected + ']').attr('selected', true);
+    $this.find('option[value="' + selected + '"]').attr('selected', true);
     $this.prepend($this.find('option[value=""]').remove());
   }
 
@@ -201,26 +201,6 @@
     }
     return this.css(dest);
   };
-
-  /**
-   * Check if n is a number
-   * @param  {[type]}  n [description]
-   * @return {Boolean}   [description]
-   */
-  Object.prototype.isNumber = function(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
-  }
-
-  /**
-   * Check if n is a number
-   * @param  {[type]}  n [description]
-   * @return {Boolean}   [description]
-   */
-  Object.prototype.firstKey = function(obj) {
-    for (var prop in obj) {
-      return prop;
-    }
-  }
 
   /**
    * [validateEmail description]
@@ -314,6 +294,26 @@
    */
   Utils.here = function() {
     return location.protocol + '//' + location.host + location.pathname;
+  }
+
+  /**
+   * Check if n is a number
+   * @param  {[type]}  n [description]
+   * @return {Boolean}   [description]
+   */
+  Utils.isNumber = function(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+  /**
+   * Check if n is a number
+   * @param  {[type]}  n [description]
+   * @return {Boolean}   [description]
+   */
+  Utils.firstKey = function(obj) {
+    for (var prop in obj) {
+      return prop;
+    }
   }
 
 })(jQuery);
